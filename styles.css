@@ -1075,6 +1075,10 @@ textarea[placeholder] {
 /* Custom, iPhone Retina */ 
 @media only screen and (min-width : 320px) and (max-width: 480px) {
 
+  section {
+    width: 100vw;
+  }
+
   header {
     height: 100vh;
     width: 100vw;
@@ -1108,7 +1112,6 @@ textarea[placeholder] {
 
   .interactive {
     height: 100vh;
-    width: 100vw;
   }
 
   .interactive-container {
@@ -1129,6 +1132,77 @@ textarea[placeholder] {
   .interactive-design-container {
     display: none;
   }
+
+  /* about */
+
+  .about {
+    height: 500vh;
+  }
+
+  .about h2 {
+    font-size: 7em;
+    text-align: center;
+    color: var(--accent-color)
+  }
+
+  .about-top-left p:first-child {
+    display: none;
+  }
+
+  .about-top-left {
+    width: 100vw;
+  }
+
+  .about-top-left p:last-child {
+    font-size: 2em;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+  }
+
+  .about-top-container {
+    grid-template-columns: 100%;
+    margin: 0 auto;
+  }
+
+  .about-top-right {
+    width: 100vw;
+  }
+
+  .about-top-right p:first-child {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .about-top-right p:last-child {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 3%;
+  }
+
+  .about-bottom-container {
+    width: 100vw;
+    grid-template-columns: 100%;
+    margin-top: 0;
+  }
+
+  .about-bottom-left {
+    width: 95%;
+    margin: auto;
+  }
+
+  .about-bottom-left img {
+    width: 100%;
+    height: 50vh;
+    margin: auto;
+  }
+
+  .about-bottom-right {
+    width: 95%;
+    margin: auto;
+    padding: 3%;
+    text-align: justify;
+  } 
 }
 
 /* Extra Small Devices, Phones */ 
