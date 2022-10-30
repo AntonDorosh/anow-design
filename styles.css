@@ -456,3 +456,312 @@ header {
   letter-spacing: 1.2px;
   cursor: pointer;
 }
+
+/* PORTFOLIO */ 
+
+.portfolio {
+  height: 720px;
+}
+
+.portfolio-list {
+  display: grid;
+  grid-template-columns: auto 720px auto;
+  grid-template-rows: auto auto;
+}
+
+.portfolio-list li {
+  position: relative;
+  width: 360px;
+  height: 360px;
+}
+
+.portfolio-list li:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.portfolio-list li:nth-child(2) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.portfolio-list li:nth-child(3) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.portfolio-list li:nth-child(4) {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.portfolio-list li:nth-child(5) {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.checkbox-wrap {
+  display: flex;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 320px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.checkbox-wrap.oblique {
+  width: 680px;
+  bottom: -341px;
+}
+
+div.oblique form.oblique-house {
+  width: 605px;
+}
+
+.checkbox-wrap form {
+  width: 245px;
+  height: 46px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label {
+  font-size: 24px;
+  line-height: 1.38;
+  color: var(--text-color);
+}
+
+input[type="checkbox"] {
+  width: 46px;
+  height: 46px;
+}
+
+/* OUR SKILLS */
+
+.our-skills {
+  height: 400px;
+  display: flex;
+}
+.out-skills-container {
+  width: var(--content-width);
+  display: flex;
+  margin: auto;
+  height: 280px;
+  align-items: center;
+  justify-content: space-between;
+}
+.left-side-text-bar {
+  width: 456px;
+}
+
+.left-side-text-bar h2 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.left-side-text-bar p:nth-child(2) {
+  font-size: 32px;
+  line-height: 1.2;
+  color: var(--text-color);
+}
+
+.left-side-text-bar p:nth-child(3) {
+  font-size: 14px;
+  line-height: 1.82;
+  color: var(--main-text-color);
+  margin-top: 10px;
+}
+
+.right-side-persentage-bar {
+  width: 615px;
+}
+.persentage-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.text-wrapper p {
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--text-color);
+  margin-bottom: 12px;
+}
+
+.text-wrapper p > span {
+  margin-left: 430px;
+}
+
+p span.web-design-percent {
+  margin-left: 360px;
+}
+
+.percent-wrapper {
+  width: 600xp;
+  height: 10px;
+  background-color: var(--main-text-color);
+}
+
+.percent-wrapper .illustration {
+  width: 540px;
+  height: 10px;
+  background: linear-gradient(
+    90deg,
+    #FF4803 0%,
+    #FFAE35 59.74%);
+}
+
+.percent-wrapper .web-design {
+  width: 480px;
+  height: 10px;
+  background: linear-gradient(
+    90deg,
+    #FF4803 0%,
+    #FFAE35 59.74%);
+}
+
+.percent-wrapper .development {
+  width: 570px;
+  height: 10px;
+  background: linear-gradient(
+    90deg,
+    #FF4803 0%,
+    #FFAE35 59.74%);
+}
+
+/* OUR TEAM */
+
+.our-team {
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.our-team-container {
+  width: var(--content-width);
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.team-photo-container {
+  display: flex
+}
+
+.our-team-container h2 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent-color)
+}
+
+.our-team-container > p {
+  font-size: 32px;
+  line-height: 1.3;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--text-color);
+}
+
+.our-team-container button {
+  align-self: center;
+  width: 156px;
+  height: 56px;
+  border: none;
+  background-color: var(--accent-color);
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 2;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+}
+
+.team-photo-list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  gap: 30px;
+  margin: auto;
+}
+
+.team-photo-list li:nth-child(1) {
+  background: url(./img/anna_brown.jpg);
+  width: 350px;
+  height: 350px;
+}
+
+.team-photo-list li:nth-child(2) {
+  background: url(./img/andy_crown.jpg);
+  width: 350px;
+  height: 350px;
+}
+
+.team-photo-list li:nth-child(3) {
+  background: url(./img/katy-necker.jpg);
+  width: 350px;
+  height: 350px;
+}
+
+.team-photo-list li:nth-child(4) {
+  background: url(./img/margo-kesslin.jpg);
+  width: 350px;
+  height: 350px;
+}
+
+.team-photo-list li:nth-child(5) {
+  background: url(./img/kanye_jones.jpg);
+  width: 350px;
+  height: 350px;
+}
+
+.team-photo-list li:nth-child(6) {
+  background: url(./img/marta_white.jpg);
+  width: 350px;
+  height: 350px;
+}
+
+.team-photo-list li {
+  display: flex;
+}
+
+.team-about-wrapper {
+  margin: auto;
+}
+
+.team-about-wrapper h3 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.25;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.team-about-wrapper p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #FCFCFC;
+}
