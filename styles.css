@@ -1203,6 +1203,10 @@ textarea[placeholder] {
     padding: 3%;
     text-align: justify;
   } 
+
+  .about-bottom-right div > p:nth-child(2) {
+    margin-top: 20px;
+  }
 }
 
 /* Extra Small Devices, Phones */ 
